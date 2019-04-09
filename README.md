@@ -1,7 +1,21 @@
 # tools 自动化构建工具
 项目开发自动化构建，模块化，版本控制工具
 
+
+## 工欲善其事必先利其器 & 工具安装
+```
+chrome
+webstorm
+node node -v
+git  git --version
+github 注册账号
+vue cli
+```
+
+
 ## 项目案例展示
+
+
 
 
 ## Git & GitLab & Github
