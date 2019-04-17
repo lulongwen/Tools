@@ -2,11 +2,7 @@
 
 # dependencies
 node_modules
-old
-BI图表
 
-# testing
-coverage
 
 # production
 build
@@ -14,7 +10,6 @@ dist
 
 # misc
 .DS_Store
-*/.DS_Store 
 .env.local
 .env.development.local
 .env.test.local
