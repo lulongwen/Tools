@@ -1,0 +1,14 @@
+{
+  "name": "front-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "lulongwen.com",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.4.1",
+    "fullpage.js": "2.9.7",
+    "jquery": "^3.4.1",
+    "multiscroll.js": "^0.2.2"
+  }
+}
