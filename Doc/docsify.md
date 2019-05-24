@@ -36,5 +36,7 @@
 
 
 ## docsify 文档
-* https://docsify.js.org/#/zh-cn/quickstart
+* https://docsify.js.org/#/zh-cn
+* https://github.com/docsifyjs/docsify-cli
 * 配置 https://www.cnblogs.com/CatFish/p/8251044.html
+	https://www.jianshu.com/p/cb4a90e430f7

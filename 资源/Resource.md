@@ -1,5 +1,10 @@
 # 工欲善其事必先利其器
 
+> 一个好的网站把它变成一个横轴（模块化）和一个纵轴的关系
+* 底层库 jquery & Vue & React
+* 组件 面向对象开发组件
+* 应用 具体去做应用效果
+
 
 
 ## GUI 图形方式显示的计算机操作用户界面
@@ -43,3 +48,34 @@
 
 * Rukada
 	* http://www.17sucai.com/preview/1474877/2018-12-06/Rukada/index.html
+
+* 交互型简历
+	* http://www.zhufengpeixun.com/H5/collegePC/index.html
+
+
+## 常用效果
+```
+
+artDialog 对话框控件
+	http://aui.github.io/artDialog/doc/index.html
+
+PhotoSwipe图片遮罩层
+	https://photoswipe.com
+
+JS 图片上传 剪切
+	https://github.com/blueimp/JavaScript-Load-Image
+
+zoom.js
+	图片点击放大，滚动缩放插件
+
+scrollUp 回到顶部
+
+Parallax.js js视觉差特效引擎插件
+
+页面组件
+	https://codyhouse.co/ds/components/content-and-layout
+
+reveal.js
+
+
+```

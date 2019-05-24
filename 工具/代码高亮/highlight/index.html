@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>highlight 代码高亮</title>
+  <!-- <link rel="stylesheet" href="styles/atom-one-light.css" /> -->
+  <!-- <link rel="stylesheet" href="styles/dracula.css" /> -->
+  <!-- <link rel="stylesheet" href="styles/atelier-dune-light.css" /> -->
+  <link rel="stylesheet" href="styles/atom-one-light.css" />
+
+  
+  <style>
+    body{
+      max-width: 800px;
+      margin: 1em auto;
+    }
+    pre, code {
+      font: 14px/1.6 'Fira Code Medium', '思源黑体', Consolas, 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body>
+  <h3>html</h3>
+  <pre>
+    <code class="html">
+      将标签的 "<" 换成"&lt;"，把">"换成"&gt;"
+      <h1&gt; 大标题</h1&gt;
+      <section&gt;好呀</section&gt;
+    </code>
+  </pre>
+
+  <h3>Javascript</h3>
+  <pre>
+    <code class="js">
+      function formatDate() {
+        let DATE = new Date();
+        let years = DATE.getFullYear();
+        let month = ('0' + (DATE.getMonth() + 1)).slice(-2);
+        let day = ('0' + DATE.getDate()).slice(-2);
+        return `${years}-${month}-${day}`; 
+      }
+    </code>
+  </pre> 
+
+
+  <h3>css</h3>
+  <pre>
+    <code class="css">
+    .aisde{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      box-sizing: border-box;
+      width: 274px;
+      padding: 1em;
+      background-color: #fff;
+      border-right: 1px solid #eee;
+      z-index: 9; 
+    }
+    </code>
+  </pre>
+
+
+  <h3>golang</h3>
+  <pre>
+    <code class="go">
+      package main
+      import "fmt"
+      func main(){
+        fmt.Println("hello, world!");
+      }
+    </code>
+  </pre>
+
+
+  <h3>nohighlight</h3>
+  <pre><code class="nohighlight">
+    var array = [
+      '东游记',
+      '三国演义'
+    ]
+  </code></pre>
+
+
+  <script src="highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</body>
+</html>

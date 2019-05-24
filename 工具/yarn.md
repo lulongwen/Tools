@@ -1,4 +1,24 @@
-# Yarn 
+# Yarn 新一代的包管理工具
+
+```
+  yarn eject
+	  暴露配置 Y
+	  自动多出 config, scripts
+
+  yarn add less@^3.0.3
+    3 主版本
+    0 次版本
+    3 打补丁的版本
+```
+
+
+## Yarn的优点
+  速度快
+  安装版本统一，更安全
+  更简洁的输出
+  更好的语义化
+  Yarn是相对于 npm而言
+
 
 ## yarn 命令
 ```

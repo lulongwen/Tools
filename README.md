@@ -71,10 +71,6 @@ vue cli
 
 
 
-## 
-
-
-
 ## 文档方案 [docsify](https://docsify.js.org/#/zh-cn/quickstart)
 * 多语言
 * 全文检索
@@ -95,6 +91,11 @@ vue cli
 * i18n
 * 45 种语言支持
 
+
+
+## 测试
+* 白盒测试，用代码测试代码
+* 黑盒测试，走流程，点击页面按钮
 
 
 ## 学习进阶
