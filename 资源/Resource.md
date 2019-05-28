@@ -77,5 +77,8 @@ Parallax.js js视觉差特效引擎插件
 
 reveal.js
 
+58种jQuery模拟CSS3过渡页面切换特效
+	http://www.htmleaf.com/jQuery/Layout-Interface/201503251572.html
+
 
 ```
