@@ -199,7 +199,7 @@
 
 
 	git reset HEAD 文件名  // 暂存区回滚到上一次, 从绿色变成红色
-		git reset HEAD deom.html 撤销，从暂存区撤销到工作区
+	git reset HEAD deom.html 撤销，从暂存区撤销到工作区
 
 
 	git reset --hard 版本号 // 回滚到某一个版本，还原整个版本

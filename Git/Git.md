@@ -5,6 +5,11 @@
 * 用户的个性化解决方案GitLab Community Edition
 * SourceTree & BitBucket
 
+* 参考资料
+```
+http://www.softwhy.com/article-8629-1.html
+```
+
 
 
 ## Git使用
@@ -229,6 +234,8 @@ git bash 工具生成 SSH Key
 	git remote rm test  // 删除 test仓库
 
 	git push origin master  // 提交到主分支，如果是主分支，简写 git push
+
+	git push --set-upstream origin master
 
 
 	应该先有远程仓库，然后根据这个仓库 clone出一个新的仓库
