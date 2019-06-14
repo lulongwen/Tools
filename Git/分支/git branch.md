@@ -5,9 +5,26 @@
 git branch 分支名
 git branch 查看分支
 
-创建并切换分支
+创建 dev分支并进入
 	添加文件到历史区此时两个分支就没关系了
 git checkout -b dev
+
+
+git push origin dev:dev
+
+
+git push --set-upstream origin dev
+
+
+git branch -r 查看远程分支
+
+// 建立本地到远程的链接
+git branch --set-upstream-to=origin/dev
+
+// 取消对master的跟踪
+git branch --unset-upstream master
+
+  upstream 上游码流
 
 ```
 
