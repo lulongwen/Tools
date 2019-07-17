@@ -24,6 +24,7 @@ Arguments
   修改为
   路径在 css/index.css
   --no-cache --update $FileName$:$FileParentDir$\css\$FileNameWithoutExtension$.css
+  --no-cache --update $FileName$:$FileParentDir$\css\$FileNameWithoutExtension$.css --trace for backtrace
 
   --no-cache --update --watch $FileName$:$FileParentDir$\css\$FileNameWithoutExtension$.css
 
