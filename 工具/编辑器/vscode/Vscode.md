@@ -10,4 +10,17 @@
 
 
 * HTML格式化
-	https://code.visualstudio.com/docs/languages/html
+	https://code.visualstudio.com/docs/languages/
+
+
+## 卸载 vscode 残留文件
+```
+	win + r 打开运行
+
+	%appdata% 回车
+		 Code 和 Visual Studio Code 
+
+	地址栏输入 %userprofile% 回车
+		删除 .vscode 文件夹
+		
+```

@@ -1,50 +1,116 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "extensions.ignoreRecommendations": false,
-    "team.showWelcomeMessage": false,
-    "git.enableSmartCommit": true,
-    "vsicons.dontShowNewVersionMessage": true,
-    "git.autofetch": true,
-    "react.beautify.onSave": true,
-    "files.associations": {
-        "*.js": "javascriptreact",
-        "*.cjson": "jsonc",
-        "*.wxss": "css",
-        "*.wxs": "javascript"
-    },
-    "git.confirmSync": false,
-    "explorer.confirmDelete": false,
-    "[markdown]": {},
-    "eslint.enable": true,
-    "eslint.options": {
-        "extensions": [
-            ".js",
-            ".jsx",
-            ".vue"
-        ]
-    },
-    "emmet.includeLanguages": {
-        "wxml": "html"
-    },
-    "minapp-vscode.disableAutoConfig": true,
-    "editor.fontSize": 18,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        {
-            "language": "vue",
-            "autoFix": true
-        }
-    ],
-    "vetur.validation.template": false,
-    "eslint.autoFixOnSave": true,
-    "editor.tabSize": 2,
-    "jest.autoEnable": false,
-    "jest.pathToConfig": "./.jest.js",
-    "terminal.integrated.rendererType": "dom",
-    "window.zoomLevel": 0,
-    "editor.quickSuggestions": {
-        "strings": true
-    },
-    "diffEditor.renderSideBySide": true
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "One Dark Pro Bold",
+  "editor.fontSize": 18,
+  "debug.console.fontSize": 16,
+  "markdown.preview.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "vue-html": "html",
+    "vue": "html",
+    "plaintext": "jade",
+    "php": "php",
+    "wxml": "html"
+  },
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascriptreact",
+    "vue",
+    "wxml"
+  ],
+  "files.associations": {
+    "*.php": "php",
+    "*.js": "javascriptreact",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.sql": "sql"
+  },
+  "code-runner.defaultLanguage": "javascript",
+  "editor.fontFamily": "Monaco, Menlo, '思源黑体', 'Source Han Sans CN Medium' ,Consolas",
+  "explorer.confirmDelete": false,
+  "terminal.integrated.fontWeight": "600",
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": true,
+  "editor.detectIndentation": false,
+  "workbench.activityBar.visible": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "600",
+  "editor.mouseWheelZoom": true,
+  "liveSassCompile.settings.formats": [{
+    "format": "expanded",
+    "extensionName": ".css",
+    "savePath": "~/../css/"
+  }],
+  "liveSassCompile.settings.excludeList": [
+    // "assets/**",
+    "frontend/**",
+    "**/node_modules/**",
+    ".vscode/**"
+  ],
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 1 versions"
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "code-runner.executorMap": {
+    "*.js": "node",
+    "php": "C:/Server/xampp/php/php.exe"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+
+  "[php]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+  },
+  "phpfmt.passes": [
+    "PSR2KeywordsLowerCase",
+    "PSR2LnAfterNamespace",
+    "PSR2CurlyOpenNextLine",
+    "PSR2ModifierVisibilityStaticOrder",
+    "PSR2SingleEmptyLineAndStripClosingTag",
+    "ReindentSwitchBlocks"
+  ],
+  "phpfmt.exclude": [
+    "ReindentComments",
+    "StripNewlineWithinClassBody"
+  ],
+  "phpfmt.indent_with_space": 2,
+  "phpfmt.psr2": false,
+  "phpfmt.php_bin": "C:/Server/xampp/php/php.exe",
+
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+
+  "git.enableSmartCommit": false,
+  "git.autofetch": false,
+  "git.autorefresh": false,
+  "git.confirmSync": false,
+  "git.enabled": false,
+  "git.path": null,
+  "search.followSymlinks": false,
+  "team.showWelcomeMessage": false,
+  "window.zoomLevel": 0,
+  "minapp-vscode.disableAutoConfig": true,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
 }
