@@ -14,3 +14,10 @@
 ### 3. 修改本地 .gitignore 文件 并推送到远程服务器
 	git commit -m "提交说明"
   git push origin master
+
+
+## git rm --cache file
+* 删除暂存区或分支上的文件, 但本地又需要使用, 只是不希望这个文件被版本控制,
+* 使用 git rm --cached
+
+https://www.cnblogs.com/everfight/p/git_rm_usage.html
