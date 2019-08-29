@@ -2,6 +2,33 @@
 
 > 项目开发自动化构建，模块化，版本控制工具
 
+## 前端开发工具包
+```jsx
+  
+  storybook
+  
+  tarojs/cli
+  
+  create-nuxt-app
+  
+  dva-cli
+  
+  treer 生成目录
+    treer -d <指定路径>
+
+yarn
+	https://www.yarnpkg.com/zh-Hans
+npm 快速入门
+	https://www.npmjs.cn/getting-started/installing-npm-packages-locally
+  
+npm 全局安装包
+	npm install vue-cli -g
+	npm uninstall vue-cli -g 卸载全局包
+	
+yarn全局包
+	yarn global add @vue/cli
+	yarn global remove vue-cli
+```
 
 ## 工欲善其事必先利其器 & 工具安装
 ```
