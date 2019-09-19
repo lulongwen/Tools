@@ -2,6 +2,11 @@
 
 > 项目开发自动化构建，模块化，版本控制工具
 
+* 前端性能最佳实践
+	https://www.cnblogs.com/developersupport/p/webpage-performance-best-practices.html
+
+
+
 ## 前端开发工具包
 ```jsx
   
@@ -30,6 +35,8 @@ yarn全局包
 	yarn global remove vue-cli
 ```
 
+
+
 ## 工欲善其事必先利其器 & 工具安装
 ```
 chrome
@@ -45,6 +52,7 @@ github 注册账号
 vue cli
 
 ```
+
 
 
 ## 项目案例展示
@@ -141,5 +149,37 @@ vue cli
 		* Quality Assurance
 
 
+
+## 其他技术
+```jsx
+	工作流引擎 Activiti7
+
+	Apache Shiro
+		一个强大且易用的Java安全框架,执行身份验证、授权、密码和会话管理。
+		使用Shiro的易于理解的API,您可以快速、轻松地获得任何应用程序,
+		从最小的移动应用程序到最大的网络和企业应用程序。
+
+```
+
+
+## 项目命名规范
+
+```jsx
+  api 接口
+
+  layouts 布局
+
+  views 视图
+
+  store 数据仓库
+
+  service 是处理单一业务的
+
+  utils 通用业务无关, 可供其他程序使用
+
+  tools 部分业务相关的
+
+  helper 帮助类，一些功能辅助
+```
 
 

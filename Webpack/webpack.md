@@ -1,4 +1,5 @@
 # Webpack4
+
 * Tree shaking
 * 懒加载
 * 代码分割
@@ -41,6 +42,10 @@
 * react create app
 * vue cli
 
+
+
+## webpack 优化
+* https://juejin.im/post/5d614dc96fb9a06ae3726b3e
 
 
 
