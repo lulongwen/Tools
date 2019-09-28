@@ -1,7 +1,14 @@
 # Webpack4
+
 * Tree shaking
 * 懒加载
 * 代码分割
+* webpack-dev-server
+* webpack异步加载的原理
+* CSS文件处理
+* images图片文件处理
+* CommonsChunkPlugin
+* webpack编译后 build.js解析
 
 * webpack4 的优点
 	* webpack 成为前端工程师必备的技能
@@ -35,6 +42,10 @@
 * react create app
 * vue cli
 
+
+
+## webpack 优化
+* https://juejin.im/post/5d614dc96fb9a06ae3726b3e
 
 
 
