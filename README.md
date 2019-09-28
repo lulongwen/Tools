@@ -183,3 +183,10 @@ vue cli
 ```
 
 
+## IT项目经理
+* [网易IT项目经理视频](https://mooc.study.163.com/smartSpec/detail/55001.htm)
+* 跨终端开发
+  * Vue技术栈选 uni-app
+  * React技术栈选 taro
+  * 选择自己熟悉的技术栈，相对而言， uni-app的多端成熟度更好
+  * [移动端框架测评](https://juejin.im/post/5cfdcf056fb9a07ecd3d5068#heading-13)
