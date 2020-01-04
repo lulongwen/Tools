@@ -1,5 +1,17 @@
 # Webpack4
 
+npx webpack --config webpack.config.my.js
+npm run build -- --config webpack.config.my.js
+
+* webpack 可以做的事情
+	* 代码转换
+	* 文件优化
+	* 代码分割
+	* 模块合并
+	* 自动刷新
+	* 代码校验
+	* 自动发布
+
 * Tree shaking
 * 懒加载
 * 代码分割
@@ -14,6 +26,12 @@
 	* webpack 成为前端工程师必备的技能
 	* 速度更快，大型项目节约 90%的构建时间
 	* 内置了更多默认配置，更新了很多 API
+
+
+### webpack-cli
+* webpack3 中，webpack本身和它的CLI是在同一个包中
+* webpack4 中，将两者分开来更好地管理它们
+* 全局安装 npm i webpack-cli -g
 
 
 

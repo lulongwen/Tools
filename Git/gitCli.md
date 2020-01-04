@@ -7,6 +7,18 @@
 	git config --global user.name '用户名'
 	git config --global user.email '邮箱'
 
+	初始化账号
+	git config --global user.name "用户名" 初始化用户名
+
+	git config --global user.email "邮箱地址" 初始化邮箱
+
+
+Git 生成公钥，3次回车
+	ssh-keygen -t rsa -C "1348551496@qq.com"
+
+	id_rsa.pub 文件 就是公钥
+		以ssh-rsa 开头，以账号的注册邮箱结尾的
+
 
 	git config --global credential.helper cache
 		设置记住密码，默认15分钟
