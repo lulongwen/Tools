@@ -10,26 +10,62 @@
 6. 手写 loader
 7. 手写 plugins
 
+
 ## 1. webpack 基础
-### [webpack 介绍](1.base/1.webapck_base.md)
-### [webpack 打包出的文件解析](/1.base/1.webapck_base.md)
-### [webpack Html插件](/1.base/1.webpack_base.md)
-### [webpack CSS 样式处理](/1.base/1.webpack_base.md)
-### [webpack 转换 ES6语法](/1.base/1.webpack_base.md)
-### [webpack 全局变量引入](/1.base/1.webpack_base.md)
+
+### [webpack 介绍](1.base/1.webapck_base)
+### [Html 插件](1.base/2.htm)
+### [Css-Less-Sass 预处理](1.base/3.css)
+### [转换 ES6语法 Eslint](1.base/4.es-eslint)
+### [全局变量引入](1.base/5.externals)
+### [图片处理-打包文件分类](1.base/6.images)
+
 
 ## 2. webpack 配置
-### 常见配置
-### 高级配置
+
+### 打包多页面应用
+### source-map配置
+### watch用法
+### 小插件应用
+### 跨域问题
+### resolve属性
+### 定义环境变量
+### 区分不同环境
+
 
 ## 3. webpack 优化
 ### 优化策略
 ### AST 抽象语法树
 
-## 4. tapable
-### webpack 中的 tapable
+### noParse
+### ignorePlugin
+### dllPlugin
+### happypack
+### webpack 自带优化
+### 抽离公共代码
+### 懒加载
+### 热更新
+
+
+## 4. webpack 中的 tapable
+* webpack 本质上是一种事件流的机制
+* 工作流程就是将各个插件串联起来，而实现这一切的核心就是 Tapable
+* tapable 类似于 nodejs 的 events 库，核心原理也是依赖于发布订阅模式
+
+### tapable
+### asyncParralleHook
+### asyncSeiesHook
+### asyncSeiesWaterfall
+
 
 ## 5. 手写 webpack
+
+### webpack分析及原理
+### 创建依赖关系
+### AST递归解析
+### 生成打包结果
+### 增加 loader
+### 增加 plugin
 
 
 ## 6. 手写 loader
@@ -66,6 +102,13 @@
 npm i webpack-bundle-analyzer -D
 
 ```
+
+
+## loader 和 plugins 的区别
+文档定义loader为在模块加载时的预处理文件，故loader运行在打包文件之前。
+2 . plugins的定义为处理loader无法处理的事物，例如loader只能在打包之前运行，但是plugins在整个编译周期都起作用
+
+
 
 
   

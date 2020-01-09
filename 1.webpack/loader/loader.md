@@ -28,12 +28,98 @@ style-loader:配合css-loader使用，以<style></style>形式在html页面中�
 
 expose-loader 暴露全局的 loader
     npm i expose-loader -D
+    
+* loader 的执行顺序
+    * pre > normal > inline > post
+    * loader 内部就是个数组
+    
+```jsx
+    enforce: 'post' 在后面
+    enforce: 'pre' 在前面
 
 
-### 引入全局的 变量
+// inline 行内 loader
+let str = require('inline-laoder!./a.js')
+
+-! 不会让文件再去通过 pre + normal loader来处理
+let str = require('-!inline-laoder!./a.js')
+
+! 没有 normal
+let str = require('!inline-laoder!./a.js')
+
+!! 什么都不要
+let str = require('!!inline-laoder!./a.js')
+   
+```
+
+
+### 引入全局的变量
 1. expose-loader
 2. providePlugin
 3. cdn 引入不打包， externals 
+
+
+## 找到 loader的方式
+1. 直接写个绝对路径
+
+```jsx
+// 1
+    use: path.resolve(__dirname, 'loaders', 'loader1.js')
+
+// 2 
+resolveLoader: {
+// 2.2 先从 node_modules找，找不到从 loaders文件夹下找
+    modules: [ 
+      'node_modules',
+      path.resolve(__dirname, 'loaders')
+    ],
+    // 2.1 别名
+    alias: {
+      loader1: path.resolve(__dirname, 'loaders', 'loader1.js')
+    }
+  },
+```
+
+
+## 配置多个loader
+* 注意 loader 执行顺序，从右到左，从下到上
+
+```jsx
+// use String 字符串
+    use: 'css-loader'
+
+
+// use Array 数组
+    use: ['style-loader', 'css-loader']
+
+// use Object 对象
+    use: {
+        loader: 'css-loader',
+    }
+```
+
+
+## loader 实现步骤
+
+```jsx
+    ["version", "emitWarning", "emitError", "getLogger", "exec", "resolve", "getResolve", "emitFile", "rootContext", "webpack", "sourceMap", "mode", "_module", "_compilation", "_compiler", "fs", "target", "loadModule", "context", "loaderIndex", "loaders", "resourcePath", "resourceQuery", "async", "callback", "cacheable", "addDependency", "dependency", "addContextDependency", "getDependencies", "getContextDependencies", "clearDependencies", "resource", "request", "remainingRequest", "currentRequest", "previousRequest", "query", "data"]
+```
+
+
+
+## 实现 babel-loader
+
+
+
+## 实现 banner-loader
+
+
+
+## 实现 file-loader
+
+
+
+## 实现 css-loader
 
 
 

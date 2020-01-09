@@ -35,3 +35,25 @@ https://www.npmjs.com/package/eslint-loader
 ```
 
 * https://www.npmjs.com/package/mini-css-extract-plugin
+
+
+## externals
+* 引入的模块，不打包第三方
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
