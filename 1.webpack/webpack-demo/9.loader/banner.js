@@ -1,1 +1,0 @@
-// 这里是 banner-loader 的注释

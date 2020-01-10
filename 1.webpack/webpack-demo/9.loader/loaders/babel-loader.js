@@ -1,3 +1,4 @@
+// babel-loader内部是用 @babel/core 转换
 const babel = require('@babel/core')
 const utils = require('loader-utils')
 
@@ -8,14 +9,14 @@ function babelLoader(source) {
   const cb = this.async()
   // console.log('loader', JSON.stringify(Object.keys(this)), source)
   
-  //
-  babel.trnasform(source, {
+  // babel 异步转化源码
+  babel.transform(source, {
     ...options,
     sourceMap: true,
     // 获取文件名，否则为 unknown，resourcePath 文件路径
     filename: this.resourcePath.split('/').pop()
   }, (err, result) => {
-    // 异步
+    // 异步回调
     cb(err, result.code, result.map)
   })
   

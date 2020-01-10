@@ -14,8 +14,6 @@
 
 style-loader:配合css-loader使用，以<style></style>形式在html页面中插入css代码
 
-
-
 ```
 
 
@@ -38,16 +36,25 @@ expose-loader 暴露全局的 loader
     enforce: 'pre' 在前面
 
 
+loader.pitch 阻断，loader内部就是一个数组
+loader.pitch = function(remainingRequest) {
+    // 没有返回值会一直执行
+}
+styleLoader.pitch = function(remainingRequest) {
+    // 没有返回值会一直执行
+}
+
 // inline 行内 loader
 let str = require('inline-laoder!./a.js')
 
 -! 不会让文件再去通过 pre + normal loader来处理
+-! 禁用前置 和 普通loader
 let str = require('-!inline-laoder!./a.js')
 
-! 没有 normal
+! 禁用普通loader normal-loader
 let str = require('!inline-laoder!./a.js')
 
-!! 什么都不要
+!! 禁用前置，后置和普通 loader, 什么loader都不要，
 let str = require('!!inline-laoder!./a.js')
    
 ```
@@ -116,7 +123,17 @@ resolveLoader: {
 
 
 ## 实现 file-loader
+* 目的就是根据图片生成一个 md5 ，emit 发射到dist目录下
+* file-loader 还会返回当前的图片路径
 
+```jsx
+{
+    test: /\.jpg$/,
+    use: {
+      loader: 'file-loader'
+    },
+  }
+```
 
 
 ## 实现 css-loader
