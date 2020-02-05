@@ -1,5 +1,8 @@
 # webpack loader
 
+* loader本质就是：接收字符串(或者buffer)，再返回处理完的字符串(或者buffer)的过程。
+* webpack会将加载的资源作为参数传入loader方法，交于loader处理，再返回
+
 * loader 特点： 功能单一
 * loader 用法
     * loader 字符串格式，字符串只用一个loader

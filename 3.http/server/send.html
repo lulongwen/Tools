@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>跨域请求</title>
+  </head>
+  <body>
+    <script>
+      const xhr = new XMLHttpRequest()
+
+      xhr.open("GET", "http://localhost:8000")
+      xhr.send()
+
+      xhr.onreadystatechange = function(ev) {
+        // console.log(ev)
+      }
+      xhr.onload = function() {
+        console.log("res", xhr.responseText)
+      }
+      
+      
+      // 请求头
+      fetch('http://localhost:8000', {
+        method: 'PUT',
+        headers: {
+          'X-Test-Cors': 123
+        }
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <title>Content-Security-Policy</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="generator" content="code">
+  <meta name="author" content="卢珑文">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self'; form-action 'self'; report-uri /report">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="robots" content="index,follow">
+</head>
+<body>
+<h3>
+  <mark>Content-Security-Policy</mark>
+</h3>
+<script>
+  console.log('Content-Security-Policy')
+</script>
+
+<script src="./test.js"></script>
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/core.js"></script>
+</body>
+</html>

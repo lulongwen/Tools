@@ -2,12 +2,16 @@
 
 > 项目开发自动化构建，模块化，版本控制工具
 
+* 技术选型
+* 业务开发
+* 测试验证
+* 发布上线
 * 前端性能最佳实践
 	https://www.cnblogs.com/developersupport/p/webpage-performance-best-practices.html
 
 
 
-## 前端开发工具包
+## 前端开发工具
 ```jsx
   
   storybook
@@ -122,7 +126,7 @@ vue cli
 
 
 
-## ## [i18n]()
+## i18n
 * i18n
 * 45 种语言支持
 
