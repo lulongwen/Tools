@@ -8,7 +8,7 @@
   "dependencies": {
     "bootstrap": "3.4.1",
     "fullpage.js": "2.9.7",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "multiscroll.js": "^0.2.2"
   }
 }
